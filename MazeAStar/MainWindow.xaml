@@ -1,0 +1,27 @@
+﻿<Window x:Class="MazeAStar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MazeAStar"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title="MainWindow" Height="600" Width="600">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+            <TextBlock Text="Filas"/>
+            <TextBox x:Name="txtFilas" Text="30"/>
+            <TextBlock Text="Columnas"/>
+            <TextBox x:Name="txtColumnas" Text="30"/>
+            <TextBlock Text="Obstáculos"/>
+            <TextBox Text="30" x:Name="txtObstaculos"/>
+            <Button Content="Generar" x:Name="btnGenerar" Click="btnGenerar_Click"/>
+            <Button x:Name="btnResolver" >
+                Resolver
+            </Button>
+        </StackPanel>
+        <UniformGrid x:Name="tablero">
+
+        </UniformGrid>
+
+    </DockPanel>
+</Window>
