@@ -98,7 +98,7 @@ namespace MazeAStar
                 {
                     cuadritos[i, j] = new Rectangle()
                     {
-                        Stroke = Brushes.Black
+                        //Stroke = Brushes.Black
                     };
                     tablero.Children.Add(cuadritos[i, j]);
                 }
@@ -109,7 +109,7 @@ namespace MazeAStar
             {
                 int fila = r.Next(filas);
                 int columna = r.Next(columnas);
-                cuadritos[columna, fila].Fill = Brushes.DarkSlateGray;
+                //cuadritos[columna, fila].Fill = Brushes.DarkSlateGray;
                 Nodo.Tablero[columna, fila] = true;
             }
 

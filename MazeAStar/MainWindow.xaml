@@ -20,7 +20,9 @@
             </Button>
         </StackPanel>
         <UniformGrid x:Name="tablero">
-
+            <UniformGrid.Background>
+                <ImageBrush ImageSource="map.png"/>
+            </UniformGrid.Background>
         </UniformGrid>
 
     </DockPanel>
